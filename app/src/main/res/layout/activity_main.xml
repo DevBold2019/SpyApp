@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0C4DE"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/myCell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:maxWidth="300dp"
+        android:maxLines="3"
+        android:padding="3dp"
+        android:text="My Cell "
+        android:textColor="#4682B4"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:gravity="start"
+        android:maxLines="3"
+        android:padding="3dp"
+        android:text="SPY"
+        android:textColor="#ADFF2F"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/myCell"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/security"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/myCell"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        android:id="@+id/notice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:background="#4682B4"
+            android:drawableLeft="@drawable/ic_warning_black_24dp"
+            android:text="The App wont run until the read phone permission are allowed"
+            android:maxLines="3"
+            android:maxWidth="300dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/checkPermissions"
+        android:background="#4169E1"
+        android:textColor="#fff"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/notice"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
