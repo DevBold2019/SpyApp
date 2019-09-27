@@ -126,9 +126,6 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
-
-
 }
     fun  checkSettings(){
 
