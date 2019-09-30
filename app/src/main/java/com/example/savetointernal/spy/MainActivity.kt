@@ -2,6 +2,7 @@ package com.example.savetointernal.spy
 
 import android.Manifest
 import android.content.ContentResolver
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.database.Cursor
 import android.net.Uri
@@ -130,6 +131,13 @@ class MainActivity : AppCompatActivity() {
     fun  checkSettings(){
 
 
+    }
+
+    fun signUp(view: View) {
+
+        intent= Intent(applicationContext,RegistryActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
 
